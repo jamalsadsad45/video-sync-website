@@ -2,15 +2,9 @@
   "name": "video-sync-website",
   "version": "1.0.0",
   "main": "index.js",
-<<<<<<< HEAD
-"scripts": {
-  "start": "node server.js"
-},
-=======
   "scripts": {
     "start": "node server.js"
   },
->>>>>>> 1fa805867df51a0b6879b57c9f59ff73f2855f1d
   "keywords": [],
   "author": "",
   "license": "ISC",

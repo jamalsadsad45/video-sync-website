@@ -49,15 +49,7 @@ io.on('connection', (socket) => {
   });
 });
 
-<<<<<<< HEAD
-const port = process.env.PORT || 8080;
-=======
 const PORT = process.env.PORT || 8080;
 server.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
->>>>>>> 1fa805867df51a0b6879b57c9f59ff73f2855f1d
-
-server.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });
