@@ -28,22 +28,21 @@ class VideoSyncApp extends React.Component {
       }, 500); 
     });
 
-    socket.on('play', (time) => {
-        this.isSyncing = true;
-        if (Math.abs(video.currentTime - time) > 0.5) {
-          video.currentTime = time; // Ensure all users are at the same time
-        }
-        video.play();
-        this.isSyncing = false;
-      });
-      
+socket.on('play', (time) => {
+  if (!video.paused) return;
+  this.isSyncing = true;
+  video.currentTime = time; 
+  video.play();
+  setTimeout(() => (this.isSyncing = false), 500);
+});
 
-      socket.on('pause', (time) => {
-        this.isSyncing = true;
-        video.currentTime = time; // Sync exact time before pausing
-        video.pause();
-        this.isSyncing = false;
-      });
+socket.on('pause', (time) => {
+  if (video.paused) return;
+  this.isSyncing = true;
+  video.currentTime = time;
+  video.pause();
+  setTimeout(() => (this.isSyncing = false), 500);
+});
       
 
       socket.on('seek', (time) => {
