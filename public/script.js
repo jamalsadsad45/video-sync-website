@@ -99,7 +99,7 @@ class VideoSyncApp extends React.Component {
           width="640"
           height="360"
           controls
-          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          src="mov_bbb.mp4"
         ></video>
       </div>
     );
