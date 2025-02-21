@@ -98,7 +98,7 @@ socket.on('pause', (time) => {
           width="640"
           height="360"
           controls
-          src="mov_bbb.mp4"
+          src="https://www.pornhub.com/view_video.php?viewkey=66deae0ddcc47"
         ></video>
       </div>
     );
