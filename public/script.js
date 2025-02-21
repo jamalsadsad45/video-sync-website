@@ -98,7 +98,7 @@ socket.on('pause', (time) => {
           width="640"
           height="360"
           controls
-          src="https://www.pornhub.com/view_video.php?viewkey=66deae0ddcc47"
+          src="https://v1.cdnde.com/x1/upload_b2048c2ca49a8248232c2f9921548ba5/41743/JOPORN_NET_41743_480p.mp4"
         ></video>
       </div>
     );
