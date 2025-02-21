@@ -98,7 +98,7 @@ socket.on('pause', (time) => {
           width="640"
           height="360"
           controls
-          src="mov_bbb.mp4"
+          src="https://drive.google.com/file/d/14WMnKbcIk2LQiB-yo26Fogibkldr1iiH/view?usp=sharing"
         ></video>
       </div>
     );
