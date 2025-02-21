@@ -23,15 +23,19 @@ io.on('connection', (socket) => {
 
   // Listen for video control events
 socket.on('play', (time) => {
-  videoState.isPlaying = true;
-  videoState.currentTime = time;
-  socket.broadcast.emit('play', time);
+  if (!videoState.isPlaying) { // Only broadcast if the state is different
+    videoState.isPlaying = true;
+    videoState.currentTime = time;
+    socket.broadcast.emit('play', time);
+  }
 });
 
 socket.on('pause', (time) => {
-  videoState.isPlaying = false;
-  videoState.currentTime = time;
-  socket.broadcast.emit('pause', time);
+  if (videoState.isPlaying) { // Only broadcast if the state is different
+    videoState.isPlaying = false;
+    videoState.currentTime = time;
+    socket.broadcast.emit('pause', time);
+  }
 });
 
   socket.on('seek', (time) => {
