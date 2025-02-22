@@ -98,7 +98,7 @@ socket.on('pause', (time) => {
           width="640"
           height="360"
           controls
-          src="https://cgjnf.com/movies/disk3/disk3_2/md/Aashiqui%202.mp4"
+          src="https://archive.org/embed/aashiqui-2_202502"
         ></video>
       </div>
     );
