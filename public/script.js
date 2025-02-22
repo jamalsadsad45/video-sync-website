@@ -98,7 +98,7 @@ socket.on('pause', (time) => {
           width="640"
           height="360"
           controls
-          src="https://archive.org/embed/aashiqui-2_202502"
+          src="https://v2.cdnde.com/x2/upload_e3377a0aba83def135c6121378614713/31374/JOPORN_NET_31374_480p.mp4"
         ></video>
       </div>
     );
